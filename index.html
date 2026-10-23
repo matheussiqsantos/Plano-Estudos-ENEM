@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro ENEM - Organização de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1>🎓 Plano de Estudos ENEM</h1>
+            <p>Organize suas tarefas e evite a procrastinação!</p>
+        </div>
+    </header>
+
+    <main class="kanban-container">
+        
+        <!-- Coluna 1: A Fazer -->
+        <section class="kanban-column">
+            <div class="column-header">
+                <h2>📝 A Fazer</h2>
+                <span class="badge">2</span>
+            </div>
+            <div class="task-list" id="col-a-fazer">
+                <div class="task-card" draggable="true" id="task-1">
+                    <span class="tag tag-alta">Redação</span>
+                    <h3>Redação do Enem</h3>
+                    <p>Fazer a dissertação semanal.</p>
+                </div>
+                <div class="task-card" draggable="true" id="task-2">
+                    <span class="tag tag-media">Matemática</span>
+                    <h3>Exercícios de Geometria</h3>
+                    <p>Resolver 15 questões sobre área e volume.</p>
+                </div>
+                <div class="task-card" draggable="true" id="task-2">
+                    <span class="tag tag-media">Biologia</span>
+                    <h3>Exercícios de Síntese Proteica</h3>
+                    <p>Resolver 30 questões sobre DNA e RNA.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna 2: Em Andamento -->
+        <section class="kanban-column">
+            <div class="column-header">
+                <h2>✏️ Em Andamento</h2>
+                <span class="badge">1</span>
+            </div>
+            <div class="task-list" id="col-em-andamento">
+                <div class="task-card" draggable="true" id="task-3">
+                    <span class="tag tag-alta">Física</span>
+                    <h3>Estudar Física (Óptica)</h3>
+                    <p>Revisar espelhos esféricos e refração da luz.</p>
+                </div><div class="task-card" draggable="true" id="task-3">
+                    <span class="tag tag-alta">Química</span>
+                    <h3>Estudar Química Orgânica</h3>
+                    <p>Produzir um mapa mental sobre química orgânica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna 3: Concluído -->
+        <section class="kanban-column">
+            <div class="column-header">
+                <h2>✅ Concluído</h2>
+                <span class="badge">1</span>
+            </div>
+            <div class="task-list" id="col-concluido">
+                <div class="task-card" draggable="true" id="task-4">
+                    <span class="tag tag-baixa">História</span>
+                    <h3>Trabalho de História</h3>
+                    <p>Fazer mapa mental sobre a Era Vargas.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
